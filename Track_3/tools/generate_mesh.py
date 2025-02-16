@@ -40,7 +40,7 @@ def generate_tetrahedral_mesh(gel_name, visualize=False):
         tetgen.max_radius_edge_ratio = 1.8  # Default is 2.0
         tetgen.min_dihedral_angle = 0.0  # Default is 0.0
         tetgen.coarsening = False  # Coarsen input tet mesh, default is False
-        tetgen.max_tet_volume = 0.00000001  # Default is unbounded
+        tetgen.max_tet_volume = 0.000001  # Default is unbounded
         tetgen.optimization_level = 2  # Ranges from 0 to 10, default is 2
         tetgen.coplanar_tolerance = (
             1e-8  # Used for coplanar point detection, default is 1e-8
