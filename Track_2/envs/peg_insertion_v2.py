@@ -425,11 +425,11 @@ class PegInsertionSimEnvV2(gym.Env):
             if self.hole_ext == ".msh":
                 self.hole_upper_z_m = hole_height_m = np.max(
                     hole_abd.tet_mesh.vertices[:, 2]
-                ) - np.min(hole_abd.tet_mesh.vertices[:, 2])
+                )
             else:
                 self.hole_upper_z_m = hole_height_m = np.max(
                     hole_abd.tri_mesh.vertices[:, 2]
-                ) - np.min(hole_abd.tri_mesh.vertices[:, 2])
+                )
             self.scene.add_entity(self.hole_entity)
 
             # add peg model
